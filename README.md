@@ -14,6 +14,10 @@ mkdir build && cd build
 
 cmake .. -DLINPHONESDK_PLATFORM=IOS -DENABLE_VIDEO=0 -DENABLE_LIME=0 -DENABLE_LIME_X3DH=0 -DENABLE_G729=1
 
+or try this if the other one didnt work
+
+cmake .. -G Xcode -DLINPHONESDK_PLATFORM=IOS -DENABLE_VIDEO=0 -DENABLE_LIME=0 -DENABLE_LIME_X3DH=0 -DENABLE_G729=1
+
 cmake --build . --parallel 4
 
 
